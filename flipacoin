@@ -11,10 +11,10 @@ def flip_coin():
     
     a = input("Would you like to flip again? ")
      
-    if a in ["y".casefold() , "yes".casefold(), "yeah".casefold()]:
+    if a.casefold() in ["y" , "yes" , "yeah"]:
         flip_coin()
 
-    elif a in ["n".casefold() , "no".casefold(), "nope".casefold()]:
+    elif a.casefold() in ["n" , "no" , "nope"]:
         print("Ok bye, hope you come again!")
         sleep(2)
         quit()
